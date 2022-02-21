@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap">
+    <title>Encuesta de satisfacción</title>
+ 
+</head>
+<body>
+    
+    <div class="container">
+        
+        <header class="header">
+            <h1 id="title">Encuesta de satisfacción</h1>
+            <p id="description"> -- Gracias por tomarte el tiempo para ayudarnos a mejorar -- </p>
+       </header>
+       <hr>
+       <div id="principal">
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" name="name" id="name"class="form-control"placeholder="Ingrese su nombre"required/>
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email"id="email" class="form-control" placeholder="Ingrese su Email" required/>
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number">Edad<span class="clue">(opcional)</span></label>
+                <input type="number" name="age"id="number"min="10" max="100"class="form-control"placeholder="Edad"/>
+              </div>
+              <div class="form-group">
+                 <p>Que tan satisfecho/a esta con su compra?</p>
+                 <select id="dropdown" name="role" class="form-control" required>
+
+                  <option disabled selected value>Elija el que mas lo/a identifique</option>
+                  <option value="muy-satisfecho">Muy satisfecho</option>
+                  <option value="satisfecho">Satisfecho</option>
+                  <option value="insatisfecho">Insatisfecho</option>
+                  <option value="otro">Otro</option>
+                 </select>
+              </div>
+          
+              <div class="form-group">
+                <p>Recomendarias nuestros productos a un amigo o familiar?</p>
+                <label><input name="user-recommend" value="definitely"type="radio"class="input-radio"/>Definitivamente</label>
+                <label><input name="user-recommend"value="Maybe"type="radio"class="input-radio"/>Quizas</label>
+                <label><input name="user-recommend"value="not-sure"type="radio"class="input-radio"/>No estoy seguro</label>
+              </div>
+          
+              <div class="form-group">
+                 <p> Cual es tu producto favorito?</p>
+                 <select id="most-like" name="mostLike" class="form-control" required>
+                  <option disabled selected value>Selecciona uno</option>
+                  <option value="desodorantes">Desodorantes</option>
+                  <option value="cremas">Cremas</option>
+                  <option value="mascarillas">Mascarillas</option>
+                  <option value="velas">Velas</option>
+                 </select>
+              </div>
+          
+              <div class="form-group">
+                <p>Te gustaria que mejoremos algo? Contanos.
+                    <br> 
+                    <span class="clue">Elige entre los siguientes</span></p>
+                <label><input name="prefer"value="atencion" type="checkbox" class="input-checkbox"/>Atención</label>
+                <label><input name="prefer"value="tiempo-de-entrega"type="checkbox"class="input-checkbox"/>Tiempo de entrega</label>
+                <label><input name="prefer"value="packaging"type="checkbox"class="input-checkbox"/>Packaging</label>
+                <label><input name="prefer"value="calidad-del-producto"type="checkbox"class="input-checkbox"/>Calidad del producto</label>
+                <label><input name="prefer"value="otro"type="checkbox"class="input-checkbox"/>Otro</label>
+              
+                <div class="form-group">
+                    <p>Alguna sugerencia?</p>
+                    <textarea id="comments"class="input-textarea"name="comment"placeholder="Ingresa tu comentario aqui..."></textarea>
+                </div>
+          
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  <strong> Enviar </strong>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+  
+</body>
+</html>
